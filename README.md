@@ -59,9 +59,9 @@ Applitools is a VisualAI Testing Automation tool that allows quickly and efficie
 
 
 #### Step 2 - Dependencies: 
-
+```
 const { Eyes, Target, VisualGridRunner, BrowserType, DeviceName } = require('@applitools/eyes-puppeteer');
-
+```
 #### Step 3 - Instance and Configuration:
 
 We define an eyes instance alongside a Visual Grid runner, which is used with Applitools Ultra Fast Grid. We can use the runner at the end of the test to gather all the test results. We defined them at the start of the main test function so we may use them later on.
@@ -100,7 +100,7 @@ We then create a function, setupEyes, that will set our configuration to Eyes be
 
 As a first step of the test, we are calling our setupEyes function, to set all the desired configuration parameters. 
 
-````
+```
     {
 
       setupEyes();
@@ -153,6 +153,7 @@ By calling eyes.check(), we are telling Eyes to perform a visual validation. Usi
         await eyes.check('demo page', Target.window().fully(false))
 
     }
+```
 
 #### Step 5 - Close Eyes and Gather Results
 
